@@ -1,6 +1,8 @@
 #ifndef TESTS_H 
 #define TESTS_H
 
+void test_LinkedList();
+
 void test_Queue();
 
 void test_Stack();

@@ -3,6 +3,71 @@
 #include "Stack.hpp"
 #include "Vector.hpp"
 
+void test_LinkedList() {
+    std::cout<<"Testing List\n";
+    int arr[3] = {1, 2, 3};
+    LinkedList<int> bro(arr, 3);
+    if (bro.GetLength() == 3) {
+        std::cout<<"Length returned correctly\n";
+    }
+    else {
+        std::cout<<"Length request failture\n";
+    }
+    if (bro.GetFirst() == 1) {
+        std::cout<<"GetFirst works correctly\n";
+    }
+    else {
+        std::cout<<"GetFirst failture\n";
+    }
+    if (bro.Get(1) == 2) {
+        std::cout<<"Get works correctly\n";
+    }
+    else {
+        std::cout<<"Get failture\n";
+    }
+    if (bro.GetLast() == 3) {
+        std::cout<<"GetLast works correctly\n";
+    }
+    else {
+        std::cout<<"GetLast failture\n";
+    }
+    bro.Prepend(0);
+    if (bro.GetFirst() == 0) {
+        std::cout<<"Prepend works correctly\n";
+    }
+    else {
+        std::cout<<"Prepend failture\n";
+    }
+    bro.InsertAt(9, 2);
+    if (bro.Get(2) == 9) {
+        std::cout<<"InsertAt works correctly\n";
+    }
+    else {
+        std::cout<<"InsertAt failture\n";
+    }
+    bro.Append(4);
+    if (bro.GetLast() == 4) {
+        std::cout<<"Append works correctly\n";
+    }
+    else {
+        std::cout<<"Append failture\n";
+    }
+    bro.DeleteFirst();
+    if (bro.GetFirst() == 1) {
+        std::cout<<"DeleteFirst works correctly\n";
+    }
+    else {
+        std::cout<<"DeleteFirst failture\n";
+    }
+    bro.DeleteLast();
+    if (bro.GetLast() == 3) {
+        std::cout<<"DeleteLast works correctly\n";
+    }
+    else {
+        std::cout<<"DeleteLast failture\n";
+    }
+}
+
 void test_Queue() {
     std::cout<<"Testing Queue\n";
     int arr[3] = {1, 2, 3};

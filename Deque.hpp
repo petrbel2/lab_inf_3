@@ -1,3 +1,5 @@
+#ifndef DEQUE_H
+#define DEQUE_H
 #include "list.hpp"
 
 template <typename data_type>
@@ -5,7 +7,6 @@ class Deque
 {
 private:
     LinkedList<data_type> list;
-    int length;
 public:
     Deque(data_type* items, int length) : list(items, length) {}
 
@@ -45,3 +46,5 @@ public:
         return result;
     }
 };
+
+#endif

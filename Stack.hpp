@@ -1,3 +1,5 @@
+#ifndef STACK_H
+#define STACK_H
 #include "list.hpp"
 
 template <typename data_type>
@@ -5,7 +7,6 @@ class Stack
 {
 private:
     LinkedList<data_type> list;
-    int length;
 public:
     Stack(data_type* items, int length) : list(items, length) {}
 
@@ -34,3 +35,5 @@ public:
         return this;
     }
 };
+
+#endif
