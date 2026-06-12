@@ -1,0 +1,12 @@
+#ifndef TESTS_H 
+#define TESTS_H
+
+void test_Queue();
+
+void test_Stack();
+
+void test_Deque();
+
+void test_Vector();
+
+#endif
