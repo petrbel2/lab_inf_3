@@ -11,4 +11,6 @@ void test_Deque();
 
 void test_Vector();
 
+void test_array();
+
 #endif

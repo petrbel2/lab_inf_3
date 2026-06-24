@@ -73,8 +73,7 @@ public:
     data_type* GetSubArray(int startIndex, int endIndex) {
         int length = endIndex - startIndex;
         if (length <= 0) {
-            std::cout<<"endIndex must be strictly greater than startIndex";
-            return NULL;
+            throw std::exception("endIndex must be strictly greater than startIndex");
         }
         else {
             data_type *new_data = new data_type[length];

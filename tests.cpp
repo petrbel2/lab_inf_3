@@ -216,3 +216,15 @@ void test_Vector() {
         std::cout<<"Comparison failture\n";
     }
 }
+
+//void test_array(){
+//    int arr[3] = {0, 3, 4};
+//    DynamicArray<int> bro(arr, 3);
+//    try {
+//        bro.GetSubArray(10, 0);
+//        assert(false && "Should have thrown" );
+//    }
+//    catch(std::exception) {
+//        std::cout<<"expected";
+//    }
+//}
